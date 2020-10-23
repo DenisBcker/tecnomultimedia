@@ -2,7 +2,7 @@ class Personaje {
 
   float x, y;
   PImage p, fondo;
-  int indice = 0;
+
   boolean Derecha = true;
   boolean saltar = false;
   float f = 3.7;
@@ -40,11 +40,11 @@ class Personaje {
   void saltar() {
 
     if ( saltar ) {
-      indice = 1;
+     
       y -= f;
       f -= 0.1;
       if ( y >= 350 ) {
-        indice = 0;
+        
         y = 350;
         f = 3.7;
         saltar = false;
